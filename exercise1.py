@@ -43,14 +43,32 @@
 
 
 #4
+# side = int(input("Please Enter any Side of a Square  : "))
 
+# print("Hollow Square Star Pattern") 
+# for i in range(side):
+#     for j in range(side):
+#         if(i == 0 or i == side - 1 or j == 0 or j == side - 1):
+#             print('*', end = '  ')
+#         else:
+#             print(' ', end = '  ')
+#     print()
 
 
 #5
 
-# Takes input from user for variables
-# width = int(input("Enter height: "))
-# height = int(input("Enter width: "))
-
+# n = 7
+# for i in range(n):
+#     print(' '*n, end= "")
+#     print('* '*(i))
+#     n-=1
 
 #6
+# for row in range(1,5):
+#     for col in range(1,8):
+#         if row==4 or row+col==5 or col-row==3:
+#             print("*"," end="")
+#         else:
+#         print(end=" ")
+#     print()
+

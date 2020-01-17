@@ -17,21 +17,23 @@
 # # "Jeff's favorite subject is history."
 # Provide default arguments in case one or both are omitted.
 
-def student(firstname = '(First name unknown)', lastname ='(who does not have a last name)', steam ='science'):
-    print(firstname, lastname, 'favorite subject is ' + steam + '.') 
-
-# 1 positional argument 
-student('John',)  
-
-# 2 positional argument                          
-student('Jeff', 'Jackson\'s', 'History') 
-
 # #***2. Celsius to Fahrenheit conversion
 # The formula to convert a temperature from Celsius to Fahrenheit is:
 
 # F = (C * 9/5) + 32
 
+
 # Write a function that takes a temperature in Celsius, converts it Fahrenheit, and returns the value.
+# Code to ask the user to input values for conversion:
+
+# def C2F(nDegreesC):
+#     nDegreesF = (1.8 * nDegreesC) + 32
+#     return nDegreesF
+# usersTempC = input('Enter a value of degrees Celsius: ')
+# usersTempC = float(usersTempC)
+# convertedTempF = C2F(usersTempC)
+# print(usersTempC, 'degrees Celsius is:', convertedTempF, 'degrees Fahrenheit.')
+
 
 # #***3. Fahrenheit to Celsius conversion
 # The formula to convert a temperature from Fahrenheit to Celsius is:
@@ -39,6 +41,14 @@ student('Jeff', 'Jackson\'s', 'History')
 # C = (F - 32) * 5/9
 
 # Write a function that takes a temperature in Fahrenheit, converts it to Celsius, and returns the value.
+
+def F2C(nDegreesF):
+    nDegreesC = (nDegreesF - 32) * (5.0 / 9.0)
+    return nDegreesC
+usersTempF = input('Enter a value of degrees Fahrenheit: ')
+usersTempF = float(usersTempF)
+convertedTempC = F2C(usersTempF)
+print(usersTempF, 'degrees Fahrenheit is:', convertedTempC, 'degrees Celsius.')
 
 # #***4. is_even function
 # Write a function that accepts a number as an argument and returns a Boolean value. Return True if the number is even; return False if it is not even.

@@ -42,21 +42,31 @@
 
 # Write a function that takes a temperature in Fahrenheit, converts it to Celsius, and returns the value.
 
-def F2C(nDegreesF):
-    nDegreesC = (nDegreesF - 32) * (5.0 / 9.0)
-    return nDegreesC
-usersTempF = input('Enter a value of degrees Fahrenheit: ')
-usersTempF = float(usersTempF)
-convertedTempC = F2C(usersTempF)
-print(usersTempF, 'degrees Fahrenheit is:', convertedTempC, 'degrees Celsius.')
+# def F2C(nDegreesF):
+#     nDegreesC = (nDegreesF - 32) * (5.0 / 9.0)
+#     return nDegreesC
+# usersTempF = input('Enter a value of degrees Fahrenheit: ')
+# usersTempF = float(usersTempF)
+# convertedTempC = F2C(usersTempF)
+# print(usersTempF, 'degrees Fahrenheit is:', convertedTempC, 'degrees Celsius.')
 
 # #***4. is_even function
 # Write a function that accepts a number as an argument and returns a Boolean value. Return True if the number is even; return False if it is not even.
 
+def isEven(n): 
+
+    # n&1 is 1, then odd, else even 
+    return (not(n & 1)) 
+
+# Driver code 
+n = 12; 
+print("True" if isEven(n) else "False") 
+
+
 # #***5. is_odd function
 # Write an is_odd function that uses your is_even function to determine if a number is odd. (That is, do not do the calculation - call a function that does the calculation.)
 
-# Hint: You'll use the not keyword.
+# Hint: You'll use the not keyword. 
 
 # #***6. only_evens function
 # Write a function that accepts a List of numbers as an argument.

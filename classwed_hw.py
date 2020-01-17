@@ -1,3 +1,31 @@
+
+
+#CLASSWORK Examples
+
+#loops
+# students = ["Matt", "Foorkhan", "Alex", "Mary"]
+# for variable in students:
+#     print(variable)
+
+#nested loops
+# days = ['Mon', 'Tues', 'Wed', 'Thus', 'Fri']
+# weeks = ['week_1', 'week_2', 'week_3']
+
+# for week in range(0,len(weeks)):
+#     print(weeks[week])
+#     for day in range(0,len(days)):
+#         print(days[day])
+
+#nested loops classwork
+# days = ['Mon', 'Tues', 'Wed', 'Thus', 'Fri']
+# weeks = ['week_1', 'week_2', 'week_3']
+
+# for week in weeks:
+#     print(f'{week}')
+#     for day in days:
+#         print(f'\t {day}')
+        
+#HOMEWORK
 # 1. Multiply Vectors - Given two lists of numbers of the same lenght, creat a new list by
 #  multiplying the pairs of number in correspoinding postions in the two list. Example:
 #[2,4,5] x [2,3,6] = [4,12,30]
@@ -9,16 +37,6 @@
 # dimensional list is represented as an list of lists:
 #[[2,-2],
 #[5,3]]
-
-a1 = [[2,-2]
-b2 = [5,3]]
-
-for a1_index in range(len(a1)):
-    for b2_index in range(len(b2)):
-        if(a1_index == b2):
-            list = []
-            
-
 
 
 
@@ -48,6 +66,13 @@ for a1_index in range(len(a1)):
 
 # #5. Leetspeak
 # Given a paragraph of text as a String, print the paragraph in leetspeak.
+leet = {'A': '4','E': '3','G': '6','I': '1','O': '0','T': '7','S': '5'}
+para = ("I pledge allegiance to the Flag of the United States of America, and to the Republic for which it stands, one Nation under God, indivisible, with liberty and justice for all.")
+para = para.upper()
+for i, j in leet.items():
+    para = para.replace(i, j)
+print (para)
+
 
 
 

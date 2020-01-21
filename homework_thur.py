@@ -53,14 +53,14 @@
 # #***4. is_even function
 # Write a function that accepts a number as an argument and returns a Boolean value. Return True if the number is even; return False if it is not even.
 
-def isEven(n): 
+# def isEven(n): 
 
-    # n&1 is 1, then odd, else even 
-    return (not(n & 1)) 
+#     # n&1 is 1, then odd, else even 
+#     return (not(n & 1)) 
 
-# Driver code 
-n = 12; 
-print("True" if isEven(n) else "False") 
+# # Driver code 
+# n = 12; 
+# print("True" if isEven(n) else "False") 
 
 
 # #***5. is_odd function
@@ -101,10 +101,10 @@ print("True" if isEven(n) else "False")
 # Write a function largest that accepts a List of numbers as an argument.
 
 # It should return the largest number in the List.
-
+#
 # numlist = [7, 8, 2, 10, 4, 22, 17, 100]
 
-# print("The list smallest number is:", max(numlist))
+# print("The list largest number is:", max(numlist))
 
 
 # ***#3. Find the shortest String.

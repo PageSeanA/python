@@ -1,14 +1,14 @@
-class Person:
-    def __init__(self, name, email, phone):
-        self.name = name
+class Person:  #class is the keyword
+    def __init__(self, name, email, phone): #Defintion of the constructor.
+        self.name = name #These are examples of instance variables.
         self.email = email
         self.phone = phone
         self.friends = []
         self.greeting_count = 0
         self.unique_greeted = []
 
-    def greet(self, other_person):
-        print('Hello {}, I am {}!'.format(other_person.name, self.name))
+    def greet(self, other_person): #Method called greet. The other_person part is the parameter.
+        print('Hello {}, I am {}!'.format(other_person.name, self.name)) #this could have been don in an f'string as well. Ex. print('Hello {other_person.name}, I am {})
         self.greeting_count += 1
         self.unique_greeted.append(other_person.name)
 
@@ -31,7 +31,7 @@ class Person:
         print(len(uniques_greeted))
 
     # 1. Instantiate an instance object of Person with name of 'Sonny', email of 'sonny@hotmail.com', and phone of '483-485-4948', store it in the variable sonny.
-
+#sonny is the object. Person is the type. The parts in the () is "passed in."
 sonny = Person('Sonny', 'sonny@hotmail.com', '483-485-4948')  
 
     # 2. Instantiate another person with the name of 'Jordan', email of 'jordan@aol.com', and phone of '495-586-3456', store it in the variable 'jordan'.
@@ -40,22 +40,22 @@ jordan = Person('Jordan', 'jordan@aol.com', '495-586-3456')
 
     # 3 Have Sonny greet jordan using the greet method.
 
-sonny.greet(jordan)
+sonny.greet(jordan) #This data that is being passed in comes from the def greet(self, other_person):
 sonny.greet(jordan)
 sonny.greet(jordan)
 
     # 4.Have Jordan greet jordan using the greet method.
 
 jordan.greet(sonny)
-bill = Person('Bill', 'bob@yahoo.com', '236-897-9001')
-jordan.greet(bill)
+sean = Person('Sean', 'sean_slightly_confused@yahoo.com', '333-333-3333')
+jordan.greet(sean)
 
     # 5. Write a print statement to print the contact info (email and phone) of Sonny.
 
-    #print(f"{sonny.name}: Email - {sonny.email}; Phone - {sonny.phone}")
+    #print(f"{sonny.name}: Email - {sonny.email}; Phone - {sonny.phone}") These are how the objects are going to print at def print_contact_into(self)'s print command.
 sonny.print_contact_info()
 
-    # 6. Write another print statement to print the contact info of Jordan.
+    # 6. Write another print statement to print the contact info of Jordan. These are how the objects are going to print at def print_contact_into(self)'s print command.
 
     #print(f"{jordan.name}: Email - {jordan.email}; Phone - {jordan.phone}")
 jordan.print_contact_info()
@@ -63,7 +63,7 @@ jordan.print_contact_info()
     # Add a num_friends method. Similarly, to get the number of friends a person has, we'd like to hide the implementation detail that there is a friends attribute which is a list. Implement a num_friends method which returns the number of friends the person currently has.
 sonny.add_friend(jordan)
 jordan.add_friend(sonny)
-jordan.add_friend(bill)
+jordan.add_friend(sean)
     #print(sonny.friends)
     #print(jordan.friends)
 

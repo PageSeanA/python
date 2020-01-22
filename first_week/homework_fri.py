@@ -6,23 +6,23 @@ Write a letter_histogram program that asks the user for input,
 and prints a dictionary containing the tally of how many times 
 each letter in the alphabet was used in the word.""" 
 
-user_input = input("Enter a word: ")
+# user_input = input("Enter a word: ")
 
-user_input = user_input.lower()   # convert input to lowercase
+# user_input = user_input.lower()   # convert input to lowercase
 
-alphabet = 'abcdefghijklmnopqrstuvwxyz'
+# alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
-letter_count = {} # empty dictionary
-for char in user_input:
-    if char in alphabet:
-        if char in letter_count:
-            letter_count[char] = letter_count[char] + 1
-        else:
-            letter_count[char] = 1
+# letter_count = {} # empty dictionary
+# for char in user_input:
+#     if char in alphabet:
+#         if char in letter_count:
+#             letter_count[char] = letter_count[char] + 1
+#         else:
+#             letter_count[char] = 1
 
-keys = letter_count.keys()
-for char in sorted(keys):
-    print(char, letter_count[char])
+# keys = letter_count.keys()
+# for char in sorted(keys):
+#     print(char, letter_count[char])
 
 """#2 Word Summary
 Write a word_histogram program that asks the user for a sentence as its input, 
@@ -66,3 +66,4 @@ word_histogram), print the top 3 words or letters. """
 # for letter in range(len(empty_dict)):
 #     print(word_dump, empty_dict[word_dump])
 
+# from collections import Counter

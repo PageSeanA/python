@@ -1,6 +1,6 @@
-class Person:  #class is the keyword
-    def __init__(self, name, email, phone): #Defintion of the constructor.
-        self.name = name #These are examples of instance variables.
+class Person:  #class is the keyword.
+    def __init__(self, name, email, phone): #Defintion of the constructor. A constructor method gets involed as soon as the object is called.
+        self.name = name #These are examples of instance variables. They go inside the constructor method.
         self.email = email
         self.phone = phone
         self.friends = []
@@ -17,7 +17,7 @@ class Person:  #class is the keyword
         print(f"{self.name}'s email: {self.email}, {self.name}'s phone number: {self.phone}")
 
     def add_friend(self, friend): #Add an instance variable (attribute). Add a friends instance variable (attribute) to the Person class. You will initialize it to an empty list within the constructor __init__. Once you've done this you should be able to add a friend to a person using the list's append method.
-        self.friends.append(friend.name)    
+        self.friends.append(friend.name)    #This examples states sonny.friends.append(jordan.name)
 
     def num_of_friends(self):
         print(len(self.friends))
@@ -36,18 +36,18 @@ sonny = Person('Sonny', 'sonny@hotmail.com', '483-485-4948')
 
     # 2. Instantiate another person with the name of 'Jordan', email of 'jordan@aol.com', and phone of '495-586-3456', store it in the variable 'jordan'.
 
-jordan = Person('Jordan', 'jordan@aol.com', '495-586-3456')
+jordan = Person('Jordan', 'jordan@aol.com', '495-586-3456') #in this example, jordan is the object.
 
     # 3 Have Sonny greet jordan using the greet method.
 
 sonny.greet(jordan) #This data that is being passed in comes from the def greet(self, other_person):
-sonny.greet(jordan)
+sonny.greet(jordan) #The breakdown of this is object.mode()
 sonny.greet(jordan)
 
     # 4.Have Jordan greet jordan using the greet method.
 
 jordan.greet(sonny)
-sean = Person('Sean', 'sean_slightly_confused@yahoo.com', '333-333-3333')
+sean = Person('Sean', 'sean_slightly_confused@yahoo.com', '333-333-3333') #in this example, sean is the object.
 jordan.greet(sean)
 
     # 5. Write a print statement to print the contact info (email and phone) of Sonny.
